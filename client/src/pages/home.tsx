@@ -46,7 +46,7 @@ export default function Home() {
       vy: (Math.random() - 0.5) * 0.5,
       size: Math.random() * 2 + 1,
       opacity: Math.random() * 0.5 + 0.2,
-      hue: Math.random() * 60 + 180 // Cyan to blue range
+      hue: Math.random() * 20 + 175 // Teal to cyan range
     });
 
     const initParticles = () => {
@@ -162,10 +162,10 @@ export default function Home() {
       {isLoading && (
         <div className={`loader ${!isLoading ? 'fade-out' : ''}`}>
           <div className="text-center">
-            <div className="text-6xl font-bold text-neon-cyan mb-4 animate-spin-slow">
+            <div className="text-6xl font-bold text-tidal-cyan mb-4 animate-spin-slow">
               <i className="fas fa-code"></i>
             </div>
-            <div className="text-2xl font-semibold text-neon-cyan animate-pulse">
+            <div className="text-2xl font-semibold text-tidal-cyan animate-pulse">
               Tidal Serverside
             </div>
           </div>
@@ -179,20 +179,20 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 glass-effect">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold text-neon-cyan">
+            <div className="text-2xl font-bold text-tidal-cyan">
               <i className="fas fa-wave-square mr-2"></i>
               Tidal
             </div>
             <div className="hidden md:flex space-x-8">
-              <button onClick={() => scrollToSection('home')} className="hover:text-neon-cyan transition-colors duration-300">Home</button>
-              <button onClick={() => scrollToSection('about')} className="hover:text-neon-cyan transition-colors duration-300">About</button>
-              <button onClick={() => scrollToSection('features')} className="hover:text-neon-cyan transition-colors duration-300">Features</button>
-              <button onClick={() => scrollToSection('join')} className="hover:text-neon-cyan transition-colors duration-300">Join</button>
+              <button onClick={() => scrollToSection('home')} className="hover:text-tidal-cyan transition-colors duration-300">Home</button>
+              <button onClick={() => scrollToSection('about')} className="hover:text-tidal-cyan transition-colors duration-300">About</button>
+              <button onClick={() => scrollToSection('features')} className="hover:text-tidal-cyan transition-colors duration-300">Features</button>
+              <button onClick={() => scrollToSection('join')} className="hover:text-tidal-cyan transition-colors duration-300">Join</button>
             </div>
             <div className="md:hidden">
               <button 
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-neon-cyan"
+                className="text-tidal-cyan"
               >
                 <i className="fas fa-bars text-xl"></i>
               </button>
@@ -204,10 +204,10 @@ export default function Home() {
         {isMobileMenuOpen && (
           <div className="md:hidden glass-effect">
             <div className="px-6 py-4 space-y-4">
-              <button onClick={() => scrollToSection('home')} className="block hover:text-neon-cyan transition-colors duration-300">Home</button>
-              <button onClick={() => scrollToSection('about')} className="block hover:text-neon-cyan transition-colors duration-300">About</button>
-              <button onClick={() => scrollToSection('features')} className="block hover:text-neon-cyan transition-colors duration-300">Features</button>
-              <button onClick={() => scrollToSection('join')} className="block hover:text-neon-cyan transition-colors duration-300">Join</button>
+              <button onClick={() => scrollToSection('home')} className="block hover:text-tidal-cyan transition-colors duration-300">Home</button>
+              <button onClick={() => scrollToSection('about')} className="block hover:text-tidal-cyan transition-colors duration-300">About</button>
+              <button onClick={() => scrollToSection('features')} className="block hover:text-tidal-cyan transition-colors duration-300">Features</button>
+              <button onClick={() => scrollToSection('join')} className="block hover:text-tidal-cyan transition-colors duration-300">Join</button>
             </div>
           </div>
         )}
@@ -219,15 +219,15 @@ export default function Home() {
           <div className="container mx-auto px-6 text-center relative z-10">
             <div className="fade-in-section">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                <span className="text-neon-cyan">Tidal Serverside:</span><br />
-                Unleash Your <span className="text-neon-purple">Roblox</span> Experience
+                <span className="text-tidal-cyan">Tidal Serverside:</span><br />
+                Unleash Your <span className="text-tidal-blue">Roblox</span> Experience
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
                 The ultimate server-side executor for Roblox, built for power and precision.
               </p>
               <button 
                 onClick={() => scrollToSection('join')}
-                className="inline-block bg-gradient-to-r from-[var(--neon-cyan)] to-[var(--neon-purple)] px-8 py-4 rounded-lg text-lg font-semibold hover:scale-105 transition-transform duration-300 pulse-glow"
+                className="inline-block bg-gradient-to-r from-[var(--tidal-teal)] to-[var(--tidal-blue)] px-8 py-4 rounded-lg text-lg font-semibold hover:scale-105 transition-transform duration-300 pulse-glow"
               >
                 <i className="fas fa-rocket mr-2"></i>
                 Join the Community
@@ -241,16 +241,16 @@ export default function Home() {
           <div className="container mx-auto px-6">
             <div className="fade-in-section">
               <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-                What is <span className="text-neon-cyan">Tidal Serverside?</span>
+                What is <span className="text-tidal-cyan">Tidal Serverside?</span>
               </h2>
               <div className="max-w-4xl mx-auto">
                 <div className="glass-card rounded-2xl p-8 md:p-12 tilt-card">
                   <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                      <div className="text-6xl text-neon-cyan mb-6">
+                      <div className="text-6xl text-tidal-cyan mb-6">
                         <i className="fas fa-server"></i>
                       </div>
-                      <h3 className="text-2xl font-bold mb-4 text-neon-purple">Server-Side Excellence</h3>
+                      <h3 className="text-2xl font-bold mb-4 text-tidal-blue">Server-Side Excellence</h3>
                       <p className="text-gray-300 leading-relaxed">
                         Tidal Serverside is a cutting-edge Roblox server-side executor designed for running scripts on small games (0-1k players). Built with security and performance in mind, it features a modern, intuitive UI that makes script execution seamless and efficient.
                       </p>
@@ -258,19 +258,19 @@ export default function Home() {
                     <div>
                       <div className="space-y-4">
                         <div className="flex items-center space-x-3">
-                          <i className="fas fa-shield-alt text-neon-cyan"></i>
+                          <i className="fas fa-shield-alt text-tidal-cyan"></i>
                           <span>Secure execution environment</span>
                         </div>
                         <div className="flex items-center space-x-3">
-                          <i className="fas fa-users text-neon-cyan"></i>
+                          <i className="fas fa-users text-tidal-cyan"></i>
                           <span>Community-driven development</span>
                         </div>
                         <div className="flex items-center space-x-3">
-                          <i className="fas fa-sync text-neon-cyan"></i>
+                          <i className="fas fa-sync text-tidal-cyan"></i>
                           <span>Regular updates and support</span>
                         </div>
                         <div className="flex items-center space-x-3">
-                          <i className="fas fa-desktop text-neon-cyan"></i>
+                          <i className="fas fa-desktop text-tidal-cyan"></i>
                           <span>Modern, user-friendly interface</span>
                         </div>
                       </div>
@@ -287,15 +287,15 @@ export default function Home() {
           <div className="container mx-auto px-6">
             <div className="fade-in-section">
               <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-                Why Choose <span className="text-neon-cyan">Tidal?</span>
+                Why Choose <span className="text-tidal-cyan">Tidal?</span>
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 {/* Feature Card 1 */}
                 <div className="glass-card rounded-xl p-6 text-center stagger-1 opacity-0 animate-fade-in-up">
-                  <div className="text-4xl text-neon-cyan mb-4">
+                  <div className="text-4xl text-tidal-cyan mb-4">
                     <i className="fas fa-palette"></i>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-neon-purple">Modern UI</h3>
+                  <h3 className="text-xl font-bold mb-3 text-tidal-blue">Modern UI</h3>
                   <p className="text-gray-300">
                     Clean, intuitive interface designed for ease of use with stunning visual effects and smooth animations.
                   </p>
@@ -303,10 +303,10 @@ export default function Home() {
 
                 {/* Feature Card 2 */}
                 <div className="glass-card rounded-xl p-6 text-center stagger-2 opacity-0 animate-fade-in-up">
-                  <div className="text-4xl text-neon-cyan mb-4">
+                  <div className="text-4xl text-tidal-cyan mb-4">
                     <i className="fas fa-code"></i>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-neon-purple">Script Support</h3>
+                  <h3 className="text-xl font-bold mb-3 text-tidal-blue">Script Support</h3>
                   <p className="text-gray-300">
                     Execute a wide range of scripts with robust support for various Roblox game environments.
                   </p>
@@ -314,10 +314,10 @@ export default function Home() {
 
                 {/* Feature Card 3 */}
                 <div className="glass-card rounded-xl p-6 text-center stagger-3 opacity-0 animate-fade-in-up">
-                  <div className="text-4xl text-neon-cyan mb-4">
+                  <div className="text-4xl text-tidal-cyan mb-4">
                     <i className="fas fa-users"></i>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-neon-purple">Community-Driven</h3>
+                  <h3 className="text-xl font-bold mb-3 text-tidal-blue">Community-Driven</h3>
                   <p className="text-gray-300">
                     Join a thriving community of developers and users sharing scripts, tips, and support.
                   </p>
@@ -325,10 +325,10 @@ export default function Home() {
 
                 {/* Feature Card 4 */}
                 <div className="glass-card rounded-xl p-6 text-center stagger-4 opacity-0 animate-fade-in-up">
-                  <div className="text-4xl text-neon-cyan mb-4">
+                  <div className="text-4xl text-tidal-cyan mb-4">
                     <i className="fas fa-sync-alt"></i>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-neon-purple">Regular Updates</h3>
+                  <h3 className="text-xl font-bold mb-3 text-tidal-blue">Regular Updates</h3>
                   <p className="text-gray-300">
                     Stay ahead with frequent updates, new features, and compatibility improvements.
                   </p>
@@ -336,10 +336,10 @@ export default function Home() {
 
                 {/* Feature Card 5 */}
                 <div className="glass-card rounded-xl p-6 text-center stagger-5 opacity-0 animate-fade-in-up">
-                  <div className="text-4xl text-neon-cyan mb-4">
+                  <div className="text-4xl text-tidal-cyan mb-4">
                     <i className="fas fa-bolt"></i>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-neon-purple">High Performance</h3>
+                  <h3 className="text-xl font-bold mb-3 text-tidal-blue">High Performance</h3>
                   <p className="text-gray-300">
                     Optimized for speed and reliability, ensuring smooth execution without lag or crashes.
                   </p>
@@ -355,19 +355,19 @@ export default function Home() {
             <div className="fade-in-section">
               <div className="text-center">
                 <h2 className="text-4xl md:text-5xl font-bold mb-8">
-                  Join the <span className="text-neon-cyan">Tidal Community</span>
+                  Join the <span className="text-tidal-cyan">Tidal Community</span>
                 </h2>
                 <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
                   Connect with fellow developers, access exclusive scripts, get support, and stay updated with the latest features. Your gateway to the ultimate Roblox experience awaits!
                 </p>
                 <div className="glass-card rounded-2xl p-8 md:p-12 max-w-2xl mx-auto">
-                  <div className="text-6xl text-neon-cyan mb-6">
+                  <div className="text-6xl text-tidal-cyan mb-6">
                     <i className="fab fa-discord"></i>
                   </div>
-                  <h3 className="text-2xl font-bold mb-6 text-neon-purple">Ready to Get Started?</h3>
+                  <h3 className="text-2xl font-bold mb-6 text-tidal-blue">Ready to Get Started?</h3>
                   <a 
                     href="#discord-link" 
-                    className="inline-block bg-gradient-to-r from-[var(--neon-cyan)] to-[var(--neon-purple)] px-12 py-4 rounded-lg text-xl font-semibold hover:scale-105 transition-all duration-300 neon-glow"
+                    className="inline-block bg-gradient-to-r from-[var(--tidal-teal)] to-[var(--tidal-blue)] px-12 py-4 rounded-lg text-xl font-semibold hover:scale-105 transition-all duration-300 tidal-glow"
                   >
                     <i className="fab fa-discord mr-2"></i>
                     [Insert Discord Link Here]
@@ -386,7 +386,7 @@ export default function Home() {
       <footer className="py-12 glass-effect">
         <div className="container mx-auto px-6">
           <div className="text-center">
-            <div className="text-3xl font-bold text-neon-cyan mb-4">
+            <div className="text-3xl font-bold text-tidal-cyan mb-4">
               <i className="fas fa-wave-square mr-2"></i>
               Tidal Serverside
             </div>

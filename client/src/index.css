@@ -23,12 +23,14 @@
   --destructive-foreground: hsl(0, 0%, 98%);
   --ring: hsl(240, 4.9%, 83.9%);
   --radius: 0.5rem;
-  --neon-cyan: hsl(183, 100%, 50%);
-  --neon-purple: hsl(258, 90%, 66%);
-  --neon-blue: hsl(213, 94%, 68%);
-  --dark-bg: hsl(0, 0%, 10%);
-  --glass-bg: hsla(0, 0%, 100%, 0.1);
-  --glass-border: hsla(0, 0%, 100%, 0.2);
+  --tidal-teal: hsl(178, 100%, 25%);
+  --tidal-blue: hsl(200, 100%, 35%);
+  --tidal-cyan: hsl(183, 100%, 40%);
+  --tidal-dark-teal: hsl(178, 100%, 15%);
+  --tidal-accent: hsl(195, 100%, 50%);
+  --dark-bg: hsl(210, 15%, 8%);
+  --glass-bg: hsla(178, 30%, 50%, 0.1);
+  --glass-border: hsla(178, 50%, 60%, 0.2);
 }
 
 .dark {
@@ -102,12 +104,12 @@
     transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
   }
   
-  .neon-glow {
-    box-shadow: 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-cyan), 0 0 60px var(--neon-cyan);
+  .tidal-glow {
+    box-shadow: 0 0 20px var(--tidal-teal), 0 0 40px var(--tidal-teal), 0 0 60px var(--tidal-teal);
   }
   
-  .neon-glow:hover {
-    box-shadow: 0 0 30px var(--neon-cyan), 0 0 60px var(--neon-cyan), 0 0 90px var(--neon-cyan);
+  .tidal-glow:hover {
+    box-shadow: 0 0 30px var(--tidal-teal), 0 0 60px var(--tidal-teal), 0 0 90px var(--tidal-teal);
   }
   
   .pulse-glow {
@@ -115,8 +117,8 @@
   }
   
   @keyframes pulseGlow {
-    0%, 100% { box-shadow: 0 0 20px var(--neon-cyan); }
-    50% { box-shadow: 0 0 40px var(--neon-cyan), 0 0 60px var(--neon-cyan); }
+    0%, 100% { box-shadow: 0 0 20px var(--tidal-teal); }
+    50% { box-shadow: 0 0 40px var(--tidal-teal), 0 0 60px var(--tidal-teal); }
   }
   
   .loader {
@@ -165,28 +167,32 @@
     z-index: 1;
   }
 
-  .text-neon-cyan {
-    color: var(--neon-cyan);
+  .text-tidal-teal {
+    color: var(--tidal-teal);
   }
 
-  .text-neon-purple {
-    color: var(--neon-purple);
+  .text-tidal-blue {
+    color: var(--tidal-blue);
   }
 
-  .text-neon-blue {
-    color: var(--neon-blue);
+  .text-tidal-cyan {
+    color: var(--tidal-cyan);
   }
 
-  .bg-neon-cyan {
-    background-color: var(--neon-cyan);
+  .text-tidal-accent {
+    color: var(--tidal-accent);
   }
 
-  .bg-neon-purple {
-    background-color: var(--neon-purple);
+  .bg-tidal-teal {
+    background-color: var(--tidal-teal);
   }
 
-  .bg-neon-blue {
-    background-color: var(--neon-blue);
+  .bg-tidal-blue {
+    background-color: var(--tidal-blue);
+  }
+
+  .bg-tidal-cyan {
+    background-color: var(--tidal-cyan);
   }
 
   .animate-spin-slow {

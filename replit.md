@@ -32,7 +32,7 @@ This is a full-stack web application for "Tidal Serverside," a Roblox server-sid
 ### Frontend Components
 1. **Home Page** (`client/src/pages/home.tsx`): Landing page with animated particle background and loading screen
 2. **UI Components**: Comprehensive shadcn/ui component library in `client/src/components/ui/`
-3. **Styling**: Custom dark theme with neon cyan/blue color scheme
+3. **Styling**: Custom dark theme with authentic teal/cyan color scheme matching Tidal branding
 4. **Mobile Responsive**: Responsive design with mobile-first approach
 
 ### Backend Components
@@ -99,3 +99,4 @@ Preferred communication style: Simple, everyday language.
 
 Changelog:
 - July 08, 2025. Initial setup
+- July 08, 2025. Updated color scheme to authentic Tidal brand colors (teal/cyan theme)

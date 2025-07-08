@@ -102,3 +102,4 @@ Changelog:
 - July 08, 2025. Initial setup
 - July 08, 2025. Updated color scheme to authentic Tidal brand colors (teal/cyan theme)
 - July 08, 2025. Added PostgreSQL database integration with Drizzle ORM
+- July 08, 2025. Made project GitHub Pages compatible with static build and deployment setup

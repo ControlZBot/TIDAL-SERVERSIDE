@@ -38,8 +38,9 @@ This is a full-stack web application for "Tidal Serverside," a Roblox server-sid
 ### Backend Components
 1. **Server Setup** (`server/index.ts`): Express server with middleware configuration
 2. **Routes** (`server/routes.ts`): API route definitions (currently minimal)
-3. **Storage Layer** (`server/storage.ts`): Data access layer with in-memory implementation
-4. **Vite Integration** (`server/vite.ts`): Development server setup with HMR
+3. **Database Layer** (`server/db.ts`): Neon PostgreSQL database connection with Drizzle ORM
+4. **Storage Layer** (`server/storage.ts`): Data access layer with PostgreSQL database implementation
+5. **Vite Integration** (`server/vite.ts`): Development server setup with HMR
 
 ### Shared Components
 1. **Schema Definitions** (`shared/schema.ts`): Database schema and TypeScript types
@@ -49,7 +50,7 @@ This is a full-stack web application for "Tidal Serverside," a Roblox server-sid
 
 1. **Client Requests**: React components make API calls using TanStack Query
 2. **API Layer**: Express routes handle requests and interact with storage layer
-3. **Data Storage**: Currently uses in-memory storage with interface for database integration
+3. **Data Storage**: PostgreSQL database with Drizzle ORM for type-safe queries
 4. **Response Handling**: Standardized JSON responses with error handling
 5. **State Management**: TanStack Query manages caching and synchronization
 
@@ -100,3 +101,4 @@ Preferred communication style: Simple, everyday language.
 Changelog:
 - July 08, 2025. Initial setup
 - July 08, 2025. Updated color scheme to authentic Tidal brand colors (teal/cyan theme)
+- July 08, 2025. Added PostgreSQL database integration with Drizzle ORM

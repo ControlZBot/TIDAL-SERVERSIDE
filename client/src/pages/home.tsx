@@ -366,14 +366,16 @@ export default function Home() {
                   </div>
                   <h3 className="text-2xl font-bold mb-6 text-tidal-blue">Ready to Get Started?</h3>
                   <a 
-                    href="#discord-link" 
+                    href="https://discord.gg/serversiding" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-gradient-to-r from-[var(--tidal-teal)] to-[var(--tidal-blue)] px-12 py-4 rounded-lg text-xl font-semibold hover:scale-105 transition-all duration-300 tidal-glow"
                   >
                     <i className="fab fa-discord mr-2"></i>
-                    [Insert Discord Link Here]
+                    Join Discord Server
                   </a>
                   <p className="text-sm text-gray-400 mt-4">
-                    Click to join our Discord server for scripts, updates, and community support
+                    Join our Discord community to access exclusive scripts, get support, and connect with fellow developers
                   </p>
                 </div>
               </div>

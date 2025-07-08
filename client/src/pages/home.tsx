@@ -252,7 +252,7 @@ export default function Home() {
                       </div>
                       <h3 className="text-2xl font-bold mb-4 text-tidal-blue">Server-Side Excellence</h3>
                       <p className="text-gray-300 leading-relaxed">
-                        Tidal Serverside is a cutting-edge Roblox server-side executor designed for running scripts on small games (0-1k players). Built with security and performance in mind, it features a modern, intuitive UI that makes script execution seamless and efficient.
+                        Tidal Serverside is a cutting-edge Roblox server-side executor made for 0-1k active players and occasionally 10k and above. Built with security and performance in mind, it features a modern, intuitive UI that makes script execution seamless and efficient.
                       </p>
                     </div>
                     <div>
